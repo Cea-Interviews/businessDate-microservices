@@ -66,5 +66,7 @@ const generateCalendar = (country, ...years) => {
   businessChecker.SetCalendar(calendar.Locale(countryUsed[0].code));
   return businessChecker;
 };
+const calculate = () => {
 
-module.exports = { generateCalendar };
+}
+module.exports = { generateCalendar, calculate };
