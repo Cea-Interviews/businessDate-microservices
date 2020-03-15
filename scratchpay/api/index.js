@@ -9,8 +9,8 @@ apiServer.use(express.json());
 // use morgan combined format and write to the winston stream
 apiServer.use(morgan('combined', { stream: logger.stream }));
 apiServer.use('/api/v1/businessDates', router);
-apiServer.listen(8000, () => {
-  logger.warn('Business date api service running on port 8000 ...');
+apiServer.listen(8081, () => {
+  logger.warn('Business date api service running on port 8081 ...');
 });
 
 module.exports = apiServer;

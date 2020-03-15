@@ -1,0 +1,36 @@
+2020-03-15T17:48:46.463Z error: uncaughtException: listen EADDRINUSE: address already in use :::9000
+Error: listen EADDRINUSE: address already in use :::9000
+    at Server.setupListenHandle [as _listen2] (net.js:1298:14)
+    at listenInCluster (net.js:1346:12)
+    at Server.listen (net.js:1434:7)
+    at Function.listen (/Users/lambda/Desktop/scratchpay/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/Users/lambda/Desktop/scratchpay/pubsub/index.js:11:14)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Module.require (internal/modules/cjs/loader.js:830:19)
+2020-03-15T17:50:35.327Z error: uncaughtException: listen EADDRINUSE: address already in use :::8082
+Error: listen EADDRINUSE: address already in use :::8082
+    at Server.setupListenHandle [as _listen2] (net.js:1298:14)
+    at listenInCluster (net.js:1346:12)
+    at Server.listen (net.js:1434:7)
+    at Function.listen (/Users/lambda/Desktop/scratchpay/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/Users/lambda/Desktop/scratchpay/pubsub/index.js:11:14)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Module.require (internal/modules/cjs/loader.js:830:19)
+2020-03-15T17:51:02.811Z error: uncaughtException: listen EADDRINUSE: address already in use :::8082
+Error: listen EADDRINUSE: address already in use :::8082
+    at Server.setupListenHandle [as _listen2] (net.js:1298:14)
+    at listenInCluster (net.js:1346:12)
+    at Server.listen (net.js:1434:7)
+    at Function.listen (/Users/lambda/Desktop/scratchpay/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/Users/lambda/Desktop/scratchpay/pubsub/index.js:11:14)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Module.require (internal/modules/cjs/loader.js:830:19)

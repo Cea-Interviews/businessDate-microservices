@@ -17,9 +17,9 @@ serviceEndpoints:
   httpbin:
     url: 'https://httpbin.org'
   businessDatesService:
-    url: 'http://localhost:8000'
+    url: 'http://localhost:8081'
   pubsubService:
-     url: 'http://localhost:9000'
+     url: 'http://localhost:8082'
     
 policies:
   - basic-auth
