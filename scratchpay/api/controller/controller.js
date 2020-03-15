@@ -5,7 +5,18 @@ const logger = require('../../logging/logger');
 
 const filename = path.dirname(__filename);
 
+
+/**
+  * Represents a function to get the next bank business date 
+  * @function businessDate
+  * @async
+  * @param {date} initialDate - The business date which serves as the starting date for counting delay
+  * @param {number} delay - The number of days delayed starting from initial date
+  * @param {string} country - The country(locale) where the bank checked is located
+  * @returns {Promise <object>} status code and data or error message
+  */
 const businessDate = async (req, res) => {
+
   const { initialDate, delay, country } = req.body;
   try {
     const data = calculate(initialDate, delay, country);
@@ -29,7 +40,16 @@ const businessDate = async (req, res) => {
   }
 };
 
+/**
+  * Represents a function to check if a date is a business date
+  * @function checkBusinessDay
+  * @async
+  * @param {date} initialDate - The business date which serves as the starting date for counting delay 
+  * @param {string} country - The country(locale) where the bank checked is located
+  * @returns {Promise <object>} status code and data or error message
+*/
 const checkBusinessDay = async (req, res) => {
+
   const { initialDate, country } = req.body;
   try {
     const date = new Date(initialDate);
