@@ -7,9 +7,20 @@ apiEndpoints:
   api:
     host: localhost
     paths: '/ip'
+  businessDate:
+    host: localhost
+    paths: ['/api/v1/businessDates', '/api/v1/businessDates/*']
+  pubsub:
+    host: localhost
+    paths: ['/api/v1/subscriptions','/api/v1/subscriptions/*']
 serviceEndpoints:
   httpbin:
     url: 'https://httpbin.org'
+  businessDatesService:
+    url: 'http://localhost:8000'
+  pubsubService:
+     url: 'http://localhost:9000'
+    
 policies:
   - basic-auth
   - cors
@@ -29,4 +40,24 @@ pipelines:
       - proxy:
           - action:
               serviceEndpoint: httpbin 
+              changeOrigin: true
+  businessDatesPipeLine:
+    apiEndpoints:
+      - businessDates
+    policies:
+    # Uncomment `key-auth:` when instructed to in the Getting Started guide.
+    # - key-auth:
+      - proxy:
+          - action:
+              serviceEndpoint: businessDatesService
+              changeOrigin: true
+  pubSubPipeLine:
+    apiEndpoints:
+        - pubSub
+    policies:
+    # Uncomment `key-auth:` when instructed to in the Getting Started guide.
+    # - key-auth:
+      - proxy:
+          - action:
+              serviceEndpoint: pubsubService
               changeOrigin: true
