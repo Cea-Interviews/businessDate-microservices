@@ -17,6 +17,7 @@
     "highland": "^2.13.5",
     "holidays-calendar": "^1.0.2",
     "luxon": "^1.22.0",
+    "morgan": "^1.9.1",
     "nyc": "^15.0.0",
     "postal": "^2.0.5",
     "supertest": "^4.0.2",
