@@ -34,3 +34,37 @@ Error: listen EADDRINUSE: address already in use :::8082
     at Module.load (internal/modules/cjs/loader.js:790:32)
     at Function.Module._load (internal/modules/cjs/loader.js:703:12)
     at Module.require (internal/modules/cjs/loader.js:830:19)
+2020-03-15T18:08:33.295Z error: uncaughtException: listen EADDRINUSE: address already in use :::5555
+Error: listen EADDRINUSE: address already in use :::5555
+    at Server.setupListenHandle [as _listen2] (net.js:1298:14)
+    at listenInCluster (net.js:1346:12)
+    at Server.listen (net.js:1434:7)
+    at Function.listen (/Users/lambda/Desktop/scratchpay/node_modules/express/lib/application.js:618:24)
+    at Context.<anonymous> (/Users/lambda/Desktop/scratchpay/pubsub/tests/index.spec.js:1:1825)
+    at callFn (/Users/lambda/Desktop/scratchpay/node_modules/mocha/lib/runnable.js:395:21)
+    at Test.Runnable.run (/Users/lambda/Desktop/scratchpay/node_modules/mocha/lib/runnable.js:382:7)
+    at Runner.runTest (/Users/lambda/Desktop/scratchpay/node_modules/mocha/lib/runner.js:546:10)
+    at /Users/lambda/Desktop/scratchpay/node_modules/mocha/lib/runner.js:672:12
+    at next (/Users/lambda/Desktop/scratchpay/node_modules/mocha/lib/runner.js:455:14)
+    at /Users/lambda/Desktop/scratchpay/node_modules/mocha/lib/runner.js:465:7
+    at next (/Users/lambda/Desktop/scratchpay/node_modules/mocha/lib/runner.js:367:14)
+    at Immediate.<anonymous> (/Users/lambda/Desktop/scratchpay/node_modules/mocha/lib/runner.js:433:5)
+    at processImmediate (internal/timers.js:439:21)
+2020-03-15T18:11:58.283Z error: uncaughtException: listen EADDRINUSE: address already in use :::8080
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (net.js:1298:14)
+    at listenInCluster (net.js:1346:12)
+    at Server.listen (net.js:1434:7)
+    at /Users/lambda/Desktop/scratchpay/node_modules/express-gateway/lib/gateway/index.js:23:37
+    at new Promise (<anonymous>)
+    at /Users/lambda/Desktop/scratchpay/node_modules/express-gateway/lib/gateway/index.js:22:26
+    at Array.forEach (<anonymous>)
+    at /Users/lambda/Desktop/scratchpay/node_modules/express-gateway/lib/gateway/index.js:20:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Promise.all (index 0)
+2020-03-15T18:11:58.286Z error: uncaughtException: listen EADDRINUSE: address already in use 127.0.0.1:9876
+Error: listen EADDRINUSE: address already in use 127.0.0.1:9876
+    at Server.setupListenHandle [as _listen2] (net.js:1298:14)
+    at listenInCluster (net.js:1346:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1485:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:65:10)

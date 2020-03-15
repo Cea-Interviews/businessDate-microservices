@@ -7,20 +7,21 @@ apiEndpoints:
   api:
     host: localhost
     paths: '/ip'
-  businessDate:
+  businessDates:
     host: localhost
     paths: ['/api/v1/businessDates', '/api/v1/businessDates/*']
-  pubsub:
+  pubSub:
     host: localhost
     paths: ['/api/v1/subscriptions','/api/v1/subscriptions/*']
 serviceEndpoints:
   httpbin:
-    url: 'https://httpbin.org'
+    url: 'http://localhost:8080'
   businessDatesService:
-    url: 'http://localhost:8081'
+    url: 'http://localhost:3000'
   pubsubService:
-     url: 'http://localhost:8082'
+     url: 'http://localhost:4000'
     
+  
 policies:
   - basic-auth
   - cors
