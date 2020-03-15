@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-param-reassign */
 const businessChecker = require('business-days-calculator');
 const calendar = require('holidays-calendar');
 const Holidays = require('date-holidays');
+const { DateTime, Duration } = require('luxon');
 const countryCodes = require('./codes');
 
 const generateCalendar = (country, ...years) => {
@@ -66,7 +68,54 @@ const generateCalendar = (country, ...years) => {
   businessChecker.SetCalendar(calendar.Locale(countryUsed[0].code));
   return businessChecker;
 };
-const calculate = () => {
-
-}
+const calculate = (date, delay, country) => {
+  const startDate = new Date(date);
+  const initialDelay = delay;
+  const year = startDate.getFullYear();
+  const checker = generateCalendar(country, year, year + 1, year + 2);
+  if (!checker.error) {
+    let businessDays = 0;
+    let holidays = 0;
+    let weekends = 0;
+    const startDateInUTC = DateTime.fromISO(startDate.toISOString());
+    for (let i = 0; i < delay; i++) {
+      const delayedTime = Duration.fromObject({ hours: i * 24 });
+      const proposedDate = new Date(
+        startDateInUTC.plus(delayedTime).toString(),
+      );
+      if (checker.IsBusinessDay(proposedDate)) {
+        businessDays++;
+      } else {
+        delay++;
+        if (proposedDate.getDay() === 6 || proposedDate.getDay() === 0) {
+          weekends++;
+        }
+        if (checker.IsHoliday(proposedDate)) {
+          holidays++;
+        }
+      }
+    }
+    const totalDays = weekends + holidays + businessDays;
+    const finalDelays = delay > 0
+      ? Duration.fromObject({ hours: (totalDays - 1) * 24 })
+      : Duration.fromObject({ hours: totalDays * 24 });
+    const finalBusinessDate = new Date(
+      startDateInUTC.plus(finalDelays).toString(),
+    );
+    const output = {
+      initialQuery: {
+        initialDate: startDate,
+        delay: initialDelay,
+      },
+      results: {
+        businessDate: finalBusinessDate,
+        totalDays,
+        holidayDays: holidays,
+        weekendDays: weekends,
+      },
+    };
+    return output;
+  }
+  return checker;
+};
 module.exports = { generateCalendar, calculate };
