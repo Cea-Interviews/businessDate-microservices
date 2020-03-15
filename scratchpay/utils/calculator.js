@@ -101,7 +101,7 @@ const calculate = (date, delay, country) => {
       : Duration.fromObject({ hours: totalDays * 24 });
     const finalBusinessDate = new Date(
       startDateInUTC.plus(finalDelays).toString(),
-    );
+    ).toUTCString();
     const output = {
       initialQuery: {
         initialDate: startDate,
