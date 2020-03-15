@@ -5,6 +5,10 @@
   "license": "UNLICENSED",
   "version": "1.0.0",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "nyc mocha ./**/**/tests/*.spec.js"
+  },
   "dependencies": {
     "business-days-calculator": "^2.2.0",
     "date-holidays": "^1.4.14",
