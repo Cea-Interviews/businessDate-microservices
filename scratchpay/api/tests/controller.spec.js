@@ -60,4 +60,58 @@ describe('controller.js', () => {
       expect(res.status).to.equal(500);
     });
   });
+  describe('GET /checkBusinessDay', () => {
+    it('should fail if it holiday calendar does not exist', async () => {
+      const res = await request(server)
+        .get('/api/v1/businessDates/isBusinessDay')
+        .send({
+          initialDate: 'November 10 2018',
+          delay: '3',
+          country: 'Nigeria',
+        });
+      expect(res.status).to.equal(404);
+
+      expect(res.body)
+        .to.be.an('object')
+        .with.keys('ok', 'message');
+      expect(res.body.ok)
+        .to.be.a('boolean')
+        .that.equals(false);
+      expect(res.body.message).to.be.a('string');
+    });
+    it('should default to United States if no locale was given', async () => {
+      const res = await request(server)
+        .get('/api/v1/businessDates/isBusinessday')
+        .send({
+          initialDate: 'November 10 2018',
+          delay: '3',
+        });
+      expect(res.status).to.equal(200);
+      expect(res.body)
+        .to.be.an('object')
+        .with.keys('ok', 'isBusinessDay');
+      expect(res.body.ok)
+        .to.be.a('boolean')
+        .that.equals(true);
+      expect(res.body.isBusinessDay).to.be.a('boolean');
+    });
+    it('should pass if it holiday calendar exist', async () => {
+      const res = await request(server)
+        .get('/api/v1/businessDates/isBusinessDay')
+        .send({
+          initialDate: 'November 10 2018',
+          delay: '3',
+          country: 'United States',
+        });
+
+      expect(res.status).to.equal(200);
+      expect(res.body)
+        .to.be.an('object')
+        .with.keys('ok', 'isBusinessDay');
+      expect(res.body.ok)
+        .to.be.a('boolean')
+        .that.equals(true);
+      expect(res.body.isBusinessDay).to.be.a('boolean');
+    });
+  });
 });
