@@ -81,3 +81,20 @@
 
 2020-03-16T01:47:52.750Z warn: Business date api service running on port 3000 ...
 2020-03-16T01:47:52.755Z warn: pub sub service running on port 4000 ...
+2020-03-16T01:54:03.026Z warn: Business date api service running on port 3000 ...
+2020-03-16T01:54:03.034Z warn: pub sub service running on port 4000 ...
+2020-03-16T01:54:03.094Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T01:54:03.097Z info: ::ffff:127.0.0.1 - - [16/Mar/2020:01:54:03 +0000] "POST /api/v1/businessDates/getBusinessDateWithDelay HTTP/1.1" 404 75 "-" "node-superagent/3.8.3"
+
+2020-03-16T01:54:03.183Z info: ::ffff:127.0.0.1 - - [16/Mar/2020:01:54:03 +0000] "POST /api/v1/businessDates/getBusinessDateWithDelay HTTP/1.1" 200 181 "-" "node-superagent/3.8.3"
+
+2020-03-16T01:54:03.221Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T01:54:03.226Z info: ::ffff:127.0.0.1 - - [16/Mar/2020:01:54:03 +0000] "POST /api/v1/businessDates/getBusinessDateWithDelay HTTP/1.1" 500 43 "-" "node-superagent/3.8.3"
+
+2020-03-16T01:54:03.231Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T01:54:03.232Z info: ::ffff:127.0.0.1 - - [16/Mar/2020:01:54:03 +0000] "GET /api/v1/businessDates/isBusinessDay HTTP/1.1" 404 75 "-" "node-superagent/3.8.3"
+
+2020-03-16T01:54:03.250Z info: ::ffff:127.0.0.1 - - [16/Mar/2020:01:54:03 +0000] "GET /api/v1/businessDates/isBusinessday HTTP/1.1" 200 33 "-" "node-superagent/3.8.3"
+
+2020-03-16T01:54:03.265Z info: ::ffff:127.0.0.1 - - [16/Mar/2020:01:54:03 +0000] "GET /api/v1/businessDates/isBusinessDay HTTP/1.1" 200 33 "-" "node-superagent/3.8.3"
+

@@ -4,3 +4,6 @@
 2020-03-15T18:09:43.750Z error: /Users/lambda/Desktop/scratchpay/api/controller:checkBusinessDay 404:- 
 2020-03-15T18:09:43.871Z error: /Users/lambda/Desktop/scratchpay/api/controller:checkBusinessDay 500:- Invalid time value
 2020-03-15T18:09:43.879Z error: /Users/lambda/Desktop/scratchpay/api/controller:checkBusinessDay 404:- 
+2020-03-16T01:54:03.094Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T01:54:03.221Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T01:54:03.231Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 

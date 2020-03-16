@@ -7,7 +7,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "nyc mocha ./**/**/tests/*.spec.js report --reporter=text-lcov | coveralls"
+    "test": "nyc mocha ./**/**/tests/*.spec.js && nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "business-days-calculator": "^2.2.0",
