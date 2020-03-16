@@ -1,7 +1,5 @@
 # BusinessDate MicroServices
-
-[![Coverage Status](https://coveralls.io/repos/github/basilcea/businessDate-microservices/badge.svg)](https://coveralls.io/github/basilcea/businessDate-microservices)
-
+[![Coverage Status](https://coveralls.io/repos/github/basilcea/businessDate-microservices/badge.svg?branch=develop)](https://coveralls.io/github/basilcea/businessDate-microservices?branch=develop)
 ### About
 A micro-service architecture implementation of business date checks  consisting of a business date api service , a pub-sub service and centralized logging service
 ### Features
