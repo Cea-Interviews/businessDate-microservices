@@ -34,3 +34,131 @@ Test Tools
 - [Mocha](https://jestjs.io/)
 - [Chai](https://www.chaijs.com/)
 - [Supertest](https://github.com/visionmedia/supertest)
+
+## Actions
+
+###  Get Business Day with delay [GET]
+
+**URL**: _http://localhost:8080/api/v1/businessDates/getBusinessDateWithDelay_
+
+**Returns**: An object containing the business date credentials.
+
+Input
+
+```javascript
+{
+	"initialDate" : "November 10 2018",
+	"delay" : "3",
+	"country": "United States"
+}
+```
+
+```javascript
+{
+  "ok": true,
+  "initialQuery": {
+    "initialDate": "2018-11-09T23:00:00.000Z",
+    "delay": "3"
+  },
+  "results": {
+    "businessDate": "2018-11-13T23:00:00.000Z",
+    "totalDays": 5,
+    "holidayDays": 0,
+    "weekendDays": 2
+  }
+}
+```
+
+### Check if date is business day [GET]
+
+**URL**: _https://localhost:8080/api/v1/businessDates/isBusinessDay_
+
+**Returns**: An object containing the business date information.
+
+Input
+
+```javascript
+{
+"initialDate" : "November 10 2018",
+"country": "United States"
+}
+```
+
+Returns
+
+```javascript
+
+    {
+  "ok": true,
+  "isBusinessDay": false
+}
+```
+
+### Subscribe to bankwire channel[GET]
+
+**URL**: _https://localhost:8080/api/v1/subscriptions/subscribe_
+
+**Returns**: An an object which holds the subscription details.
+
+Returns
+
+```javascript
+  {
+  "channel": "BankWire",
+  "topic": "businessDates",
+  "pipeline": [],
+  "cacheKeys": []
+}
+```
+
+
+### Publish to the topic businessDates in  bankwire channel[POST]
+
+**URL**: _https://localhost:8080/api/v1/subscriptions/publish_
+
+**Returns**: An an object which holds the details published.
+Input
+
+```javascript
+{
+	"initialDate" : "November 10 2018",
+	"delay" : "3",
+	"country": "United States"
+}
+```
+
+Returns
+
+```javascript
+{
+    "ok": true,
+  "initialQuery": {
+    "initialDate": "2018-11-09T23:00:00.000Z",
+    "delay": "3"
+  },
+  "results": {
+    "businessDate": "2018-11-13T23:00:00.000Z",
+    "totalDays": 5,
+    "holidayDays": 0,
+    "weekendDays": 2
+  }
+
+}
+```
+
+### Unsubscribe from a channel[GET]
+
+**URL**: _https://localhost:8080/api/v1/subscriptions/unsubscribe_
+
+**Returns**: An an object which an shows your subscription status.
+
+Returns
+
+```javascript
+{
+  "ok": true,
+  "message": "You have succesfully unsubscribed"
+}
+```
+
+

@@ -68,3 +68,21 @@ Error: listen EADDRINUSE: address already in use 127.0.0.1:9876
     at listenInCluster (net.js:1346:12)
     at GetAddrInfoReqWrap.doListen [as callback] (net.js:1485:7)
     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:65:10)
+2020-03-15T21:13:30.542Z error: uncaughtException: listen EADDRINUSE: address already in use :::8080
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (net.js:1298:14)
+    at listenInCluster (net.js:1346:12)
+    at Server.listen (net.js:1434:7)
+    at /Users/lambda/Desktop/scratchpay/node_modules/express-gateway/lib/gateway/index.js:23:37
+    at new Promise (<anonymous>)
+    at /Users/lambda/Desktop/scratchpay/node_modules/express-gateway/lib/gateway/index.js:22:26
+    at Array.forEach (<anonymous>)
+    at /Users/lambda/Desktop/scratchpay/node_modules/express-gateway/lib/gateway/index.js:20:7
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Promise.all (index 0)
+2020-03-15T21:13:30.547Z error: uncaughtException: listen EADDRINUSE: address already in use 127.0.0.1:9876
+Error: listen EADDRINUSE: address already in use 127.0.0.1:9876
+    at Server.setupListenHandle [as _listen2] (net.js:1298:14)
+    at listenInCluster (net.js:1346:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1485:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:65:10)
