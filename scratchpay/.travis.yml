@@ -6,7 +6,6 @@ services:
   - postgresql
 addons:
   postgresql: '9.6'
-
 cache:
   directories:
     - 'node_modules'
@@ -15,8 +14,6 @@ env:
     - DB_ENV=ci
 before_script:
   - npm install coveralls
-  - npm i -g knex
-  - knex migrate:latest --env=ci
 script:
   - npm run test
 notifications:
