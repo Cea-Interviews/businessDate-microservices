@@ -28,17 +28,17 @@ describe('controller.js', () => {
         .to.be.an('object')
         .with.keys('businessDate', 'totalDays', 'holidayDays', 'weekendDays');
     });
-    it('should publish if there are subscribed user', async () => {
-      await request(server)
-        .get('/api/v1/subscriptions/subscribe');
-      const response = await request(server)
-        .post('/api/v1/subscriptions/publish').send({
-          initialDate: 'November 10 2018',
-          delay: '3',
-          country: 'United States',
-        });
-      expect(response.status).to.equal(200);
-    });
+    // it('should publish if there are subscribed user', async () => {
+    //   await request(server)
+    //     .get('/api/v1/subscriptions/subscribe');
+    //   const response = await request(server)
+    //     .post('/api/v1/subscriptions/publish').send({
+    //       initialDate: 'November 10 2018',
+    //       delay: '3',
+    //       country: 'United States',
+    //     });
+    //   expect(response.status).to.equal(200);
+    // });
   });
   describe('[GET /subscribe', () => {
     it('should return the channel subscribed to', async () => {

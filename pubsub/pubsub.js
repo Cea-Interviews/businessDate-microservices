@@ -7,9 +7,9 @@ const logger = require('../logging/logger');
 const filename = path.dirname(__filename);
 // eslint-disable-next-line consistent-return
 const publishing = async (req, res) => {
-  const { initialDate, delay, country } = req.body;
-  const info = await calculate(initialDate, delay, country);
   try {
+    const { initialDate, delay, country } = req.body;
+    const info = await calculate(initialDate, delay, country);
     const subscribers = postal.getSubscribersFor({
       channel: 'BankWire',
       topic: 'businessDates',
@@ -18,14 +18,17 @@ const publishing = async (req, res) => {
       postal.subscribe({
         channel: 'BankWire',
         topic: 'businessDates',
-        callback: (data) => res.status(200).json({ ok: true , ...data}),
+        callback: (data) => res.status(200).json({ ok: true, ...data }),
       });
     }
-    postal.publish({
-      channel: 'BankWire',
-      topic: 'businessDates',
-      data: info,
-    });
+    postal.publish(
+      {
+        channel: 'BankWire',
+        topic: 'businessDates',
+        data: info
+      },
+    );
+    // ;
   } catch (err) {
     logger.error(`${filename}:publishing 500:- `, err);
     return res.status(500).json({
@@ -36,12 +39,21 @@ const publishing = async (req, res) => {
 };
 
 const subscribing = async (req, res) => {
-  const info = postal.subscribe({
-    channel: 'BankWire',
-    topic: 'businessDates',
-    callback: (data) => data,
-  });
-  return res.status(200).json(info);
+  try {
+    const info = postal
+      .subscribe({
+        channel: 'BankWire',
+        topic: 'businessDates',
+        callback: (data) => res.status(200).json({ ok: true, ...data }),
+      });
+    return res.status(200).json(info);
+  } catch (err) {
+    logger.error(`${filename}:subscribing 500:- `, err);
+    return res.status(500).json({
+      ok: false,
+      message: 'Something went wrong',
+    });
+  }
 };
 const unsubscribing = async (req, res) => {
   postal.unsubscribe(postal.subscribe({ topic: 'businessDates' }).once());
