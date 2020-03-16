@@ -13,3 +13,104 @@
 2020-03-16T02:01:24.109Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
 2020-03-16T02:01:24.194Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
 2020-03-16T02:01:24.198Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:15:14.641Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:15:14.753Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:15:14.758Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:16:52.164Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:16:52.263Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:16:52.268Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:17:57.906Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:17:58.029Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:17:58.037Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:18:18.719Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:18:18.803Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:18:18.810Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:20:43.809Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T02:24:02.319Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:24:02.416Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:24:02.425Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:26:37.720Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:26:37.806Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:26:37.815Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:46:21.785Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:46:21.913Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:46:21.923Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:48:40.266Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:48:40.435Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:48:40.446Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:49:17.705Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:49:17.815Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:49:17.821Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:49:59.338Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:49:59.458Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:49:59.465Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:50:38.975Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:50:39.143Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:50:39.157Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:51:31.189Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:51:31.285Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:51:31.301Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:51:31.389Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T02:53:55.914Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:53:56.014Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:53:56.023Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:53:56.109Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T02:54:19.037Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:54:19.145Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:54:19.152Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:54:19.223Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T02:56:29.929Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:56:30.014Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T02:56:30.020Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T02:56:30.075Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T02:58:06.882Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:01:03.952Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:04:54.947Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:08:06.399Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:08:30.944Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:10:16.952Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:12:06.633Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:12:18.375Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:21:36.627Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:23:48.527Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:26:52.081Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:27:20.896Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:27:54.028Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:29:52.163Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T03:30:56.934Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 404:- 
+2020-03-16T04:00:45.589Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T04:00:45.677Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T04:00:45.682Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T04:00:45.771Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:02:36.216Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T04:02:36.306Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T04:02:36.311Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T04:02:36.397Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:03:16.801Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T04:03:16.892Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T04:03:16.897Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T04:03:16.997Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:04:54.936Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T04:04:55.025Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T04:04:55.032Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T04:04:55.127Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:06:01.172Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T04:06:01.267Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 500:- Invalid time value
+2020-03-16T04:06:01.272Z error: /Users/lambda/Desktop/businessDate-microservices/api/controller:checkBusinessDay 404:- 
+2020-03-16T04:06:01.378Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:08:19.529Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:08:28.746Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:10:17.268Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:13:48.151Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:17:29.743Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:18:06.102Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:18:24.166Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:20:13.006Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:20:53.282Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:21:20.907Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot read property 'call' of undefined
+2020-03-16T04:21:22.308Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot read property 'call' of undefined
+2020-03-16T04:21:32.122Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot read property 'call' of undefined
+2020-03-16T04:23:56.040Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:25:09.805Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:27:19.534Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
+2020-03-16T04:33:34.163Z error: /Users/lambda/Desktop/businessDate-microservices/pubsub:publishing 500:- Cannot set headers after they are sent to the client
